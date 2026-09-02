@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <radialGradient id="heroGlow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#181C21" />
+      <stop offset="60%" stop-color="#121519" />
+      <stop offset="100%" stop-color="#0B0D0F" />
+    </radialGradient>
+    <linearGradient id="terracottaBeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D98A38" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#D98A38" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="copperBeam" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34747B" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#34747B" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="concreteTexture" width="120" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="20" r="1.2" fill="#EFEBE4" opacity="0.05"/>
+      <circle cx="50" cy="80" r="0.8" fill="#EFEBE4" opacity="0.04"/>
+      <circle cx="95" cy="35" r="1.0" fill="#EFEBE4" opacity="0.06"/>
+      <circle cx="70" cy="105" r="0.7" fill="#EFEBE4" opacity="0.03"/>
+    </pattern>
+  </defs>
+
+  <!-- Ground & Concrete Grain -->
+  <rect width="1920" height="1080" fill="url(#heroGlow)" />
+  <rect width="1920" height="1080" fill="url(#concreteTexture)" />
+
+  <!-- Architectural Structure & Beam Grid -->
+  <g opacity="0.55">
+    <!-- Cantilevered Concrete Blocks -->
+    <polygon points="200,100 1720,100 1520,380 400,380" fill="none" stroke="#EFEBE4" stroke-opacity="0.1" stroke-width="1.5"/>
+    <polygon points="350,380 1570,380 1370,820 550,820" fill="none" stroke="#EFEBE4" stroke-opacity="0.12" stroke-width="1.5"/>
+    
+    <!-- Drafting Grid Hairlines -->
+    <line x1="100" y1="540" x2="1820" y2="540" stroke="#EFEBE4" stroke-opacity="0.08" stroke-width="1"/>
+    <line x1="960" y1="50" x2="960" y2="1030" stroke="#EFEBE4" stroke-opacity="0.08" stroke-width="1"/>
+    
+    <line x1="400" y1="0" x2="400" y2="1080" stroke="#EFEBE4" stroke-opacity="0.05" stroke-dasharray="8 8"/>
+    <line x1="1520" y1="0" x2="1520" y2="1080" stroke="#EFEBE4" stroke-opacity="0.05" stroke-dasharray="8 8"/>
+
+    <!-- Light Rays & Diagonal Structural Beams -->
+    <line x1="200" y1="100" x2="1720" y2="980" stroke="url(#terracottaBeam)" stroke-width="1.5"/>
+    <line x1="1720" y1="100" x2="200" y2="980" stroke="url(#copperBeam)" stroke-width="1.5"/>
+
+    <!-- Structural Portal Aperture Ring -->
+    <circle cx="960" cy="540" r="320" fill="none" stroke="#EFEBE4" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="12 6"/>
+    <circle cx="960" cy="540" r="220" fill="none" stroke="#34747B" stroke-opacity="0.4" stroke-width="1.5"/>
+  </g>
+
+  <!-- Accent Typography in Photo -->
+  <text x="960" y="490" text-anchor="middle" font-family="'Syne', sans-serif" font-weight="700" font-size="26" fill="#EFEBE4" opacity="0.35" letter-spacing="0.4em">MONOLITH ARCHITECTURAL STAGE</text>
+  <text x="960" y="580" text-anchor="middle" font-family="'Sora', sans-serif" font-weight="500" font-size="12" fill="#A0A7AC" opacity="0.4" letter-spacing="0.3em">RAW CONCRETE &amp; HEAVY TIMBER // 001–005</text>
+</svg>
